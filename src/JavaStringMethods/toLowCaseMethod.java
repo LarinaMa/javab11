@@ -1,0 +1,10 @@
+package JavaStringMethods;
+
+public class toLowCaseMethod {
+    public static void main(String[] args) {
+
+        String txt = "Hello World";
+        System.out.println(txt.toUpperCase());//HELLO WORLD
+        System.out.println(txt.toLowerCase());//hello world
+    }
+}
