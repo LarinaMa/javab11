@@ -7,6 +7,7 @@ public class SortingPractice {
         int[] zipcodes = {61212,91213,11214,71215}; //[61212, 91213, 11214, 71215]
         System.out.println(Arrays.toString(zipcodes));
         Arrays.sort(zipcodes);// it will arrange the data in ascending order (from smaller to large)
+
         System.out.println(Arrays.toString(zipcodes));//[11214, 61212, 71215, 91213]
         String[] colors = {"violet", "pink", "red","white","black"};
         Arrays.sort(colors);

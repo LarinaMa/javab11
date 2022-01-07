@@ -18,16 +18,13 @@ Output:
  */
         Scanner input = new Scanner(System.in);
         System.out.println("enter number");
-        int num = input.nextInt();
-        if (num > 0 && num <= 10) {
-            for (int i = 1; num >= i; i++) {
-                if (i == 1) {
-                } else {
-                    System.out.println();
+        int num = input.nextInt();//assign number provided by user to variable num
+        if (num > 0 && num <= 10) { // using "if condition" to check if number is between 1 and 10
+            for (int i = 1; num >= i; i++) { // this loop will work till it will reach the number provided by user
+                for (int j = 1; i >= j; j++) { // this loop is used to jump for next number and next line
+                    System.out.print(i); // printing number on the same line
                 }
-                for (int j = 1; i >= j; j++) {
-                    System.out.print(i);
-                }
+                System.out.println();// used to start new line
             }
         }else{
             System.out.println("Please check your number");

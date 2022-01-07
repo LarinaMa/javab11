@@ -11,11 +11,11 @@ Input : 4 Output: 2.083333333333333 -> Because 1+1/2+/1/3+1/4 = 2.08333333333333
  */
         Scanner input = new Scanner(System.in);
         System.out.println("Enter number of terms of series :");
-       double num = input.nextDouble();
-        double num1 = num;
+      int num = input.nextInt();
+      double num1 = 1;
         double sum = 0;
-        for (double i = 0; i<=num; i++){
-            sum += num1+num1/2;
+        for (int i = 1; i<=num; i++){
+            sum += num1/i;
         }
         System.out.println(sum);
     }

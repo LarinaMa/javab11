@@ -16,18 +16,17 @@ numbers are 2, 3, 5, 7, 11, 13, 17, 19, 23, and 29.
  */
         Scanner input = new Scanner(System.in);
         System.out.println("please provide an integer number");
-        int num = input.nextInt();
+        int num = input.nextInt(); // assign number provided by user to variable num
         int sum = 0;
-        for (int i = 1; i<=num/2; i++){
+        for (int i = 1; i<=num; i++){ // using "for loop" to count factors
             if (num % i == 0){
                 sum++;
             }
-        } if (sum>1){
+        } if (sum>2){
             System.out.println("Not a Prime Number");
         } else{
             System.out.println("Prime Number");
         }
     }
 }
-// 30 --> 1; 2; 3; 5; 6; 10; 15; 30 --> 30/2=15
-// 24 --> 1; 2; 3; 4; 6; 8; 12; 24
+

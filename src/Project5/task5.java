@@ -19,18 +19,15 @@ Output:
  */
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter number between 1 to 10");
-        int num = input.nextInt();
-        int num1 = num;
-        if (num>=1 && num<=10){
-for (int i=1; i<=num; i++, num1--){
-    if(i==1){}else{
-        System.out.println();
-    }
-    for (int j=num1; j>=1; j--){
-
-        System.out.print(num1);
-    }
-            }
+        int num = input.nextInt();//assign number provided by user to variable num
+        int num1 = num;// new variable, used to preserve number provided by user
+        if (num>=1 && num<=10){// using "if condition" to check if number is between 1 and 10
+             for (int i=1; i<=num; i++, num1--){// this loop will work from the number provided by user till it will reach number 1
+                for (int j=num1; j>=1; j--){// this loop is used to fill line with numbers starting from the number provided by user till it reach 1
+                   System.out.print(num1);// printing numbers in the same line till it will become equal to the number
+               }
+              System.out.println();// used to start new line
+             }
         } else{
             System.out.println("check your number");
         }
